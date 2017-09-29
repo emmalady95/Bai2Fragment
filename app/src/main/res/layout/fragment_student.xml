@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emmalady.bai2fragment.Fragment.StudentFragment">
+
+    <!--NAME-->
+    <TextView
+        android:id="@+id/tvNameDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_showname"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@+id/tvNameDef"
+        android:layout_marginLeft="40sp"
+        android:layout_marginStart="40sp"
+        android:text="Your Name"
+        android:textColor="#191970"
+        android:textSize="14sp"/>
+
+    <!--ORRIGIN-->
+    <TextView
+        android:id="@+id/tvOriginDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameDef"
+        android:layout_marginTop="30sp"
+        android:layout_alignLeft="@+id/tvNameDef"
+        android:layout_alignStart="@+id/tvNameDef"
+        android:text="@string/tv_origin"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/edOrigin"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/tvName1"
+        android:layout_toRightOf="@+id/tvOriginDef"
+        android:layout_marginTop="20sp"
+        android:layout_alignLeft="@+id/tvName1"
+        android:layout_alignStart="@+id/tvName1"
+        android:textSize="14sp"/>
+
+    <!--DAY OF BIRTH-->
+    <TextView
+        android:id="@+id/tvBirthDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOriginDef"
+        android:layout_marginTop="35sp"
+        android:layout_alignLeft="@+id/tvOriginDef"
+        android:layout_alignStart="@+id/tvOriginDef"
+        android:text="@string/tv_birth"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/edBirth"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/edOrigin"
+        android:layout_toRightOf="@+id/tvBirthDef"
+        android:layout_alignLeft="@+id/edOrigin"
+        android:layout_alignStart="@+id/edOrigin"
+        android:textSize="14sp" />
+
+    <!--SEX-->
+    <TextView
+        android:id="@+id/tvSexDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBirthDef"
+        android:layout_marginTop="35sp"
+        android:layout_alignLeft="@+id/tvBirthDef"
+        android:layout_alignStart="@+id/tvBirthDef"
+        android:text="@string/tv_sex"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/edSex"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:textSize="14sp"
+        android:layout_below="@+id/edBirth"
+        android:layout_alignLeft="@+id/edBirth"
+        android:layout_alignStart="@+id/edBirth" />
+
+    <!--CLASS-->
+    <TextView
+        android:id="@+id/tvClassDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class"
+        android:layout_below="@+id/tvSexDef"
+        android:layout_marginTop="35sp"
+        android:layout_alignLeft="@+id/tvSexDef"
+        android:layout_alignStart="@+id/tvSexDef"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/edClass"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:textSize="14sp"
+        android:layout_below="@+id/edSex"
+        android:layout_alignLeft="@+id/edSex"
+        android:layout_alignStart="@+id/edSex" />
+
+    <!--COURSE-->
+    <TextView
+        android:id="@+id/tvCourseDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvClassDef"
+        android:layout_marginTop="35sp"
+        android:layout_alignLeft="@+id/tvClassDef"
+        android:layout_alignStart="@+id/tvClassDef"
+        android:text="@string/tv_course"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/edCourse"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:textSize="14sp"
+        android:layout_below="@+id/edClass"
+        android:layout_alignLeft="@+id/edClass"
+        android:layout_alignStart="@+id/edClass" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="OK"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvCourseDef"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

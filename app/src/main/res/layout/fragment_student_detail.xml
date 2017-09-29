@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emmalady.bai2fragment.Fragment.StudentDetailFragment">
+
+    <TextView
+        android:id="@+id/tvShowInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_showinfor"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#191970"/>
+
+    <!--NAME-->
+    <TextView
+        android:id="@+id/tvNameDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_showname"
+        android:layout_below="@+id/tvShowInfor"
+        android:layout_marginLeft="20sp"
+        android:textSize="16sp"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Name"
+        android:layout_marginLeft="20sp"
+        android:layout_alignBottom="@+id/tvNameDef"
+        android:layout_alignLeft="@+id/tvShowInfor"
+        android:layout_alignStart="@+id/tvShowInfor"
+        android:layout_marginStart="20sp"
+        android:textSize="16sp"
+        android:textColor="#FF3030"/>
+
+    <!--ORIGIN-->
+    <TextView
+        android:id="@+id/tvOriginDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_origin"
+        android:layout_below="@+id/tvNameDef"
+        android:layout_alignLeft="@+id/tvNameDef"
+        android:layout_alignStart="@+id/tvNameDef"
+        android:textSize="16sp"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Origin"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvShowName"
+        android:layout_alignBaseline="@+id/tvOriginDef"
+        android:layout_alignLeft="@+id/tvShowName"
+        android:layout_alignStart="@+id/tvShowName"
+        android:textColor="#FF3030"/>
+
+    <!--BIRTH-->
+    <TextView
+        android:id="@+id/tvBirthDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_birth"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvOriginDef"
+        android:layout_alignLeft="@+id/tvOriginDef"
+        android:layout_alignStart="@+id/tvOriginDef"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Birth"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tvBirthDef"
+        android:layout_alignBottom="@+id/tvBirthDef"
+        android:layout_alignLeft="@+id/tvShowOrigin"
+        android:layout_alignStart="@+id/tvShowOrigin"
+        android:textColor="#FF3030"/>
+
+    <!--SEX-->
+    <TextView
+        android:id="@+id/tvSexDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_sex"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvBirthDef"
+        android:layout_alignLeft="@+id/tvBirthDef"
+        android:layout_alignStart="@+id/tvBirthDef"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Sex"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tvSexDef"
+        android:layout_alignBottom="@+id/tvSexDef"
+        android:layout_alignLeft="@+id/tvShowBirth"
+        android:layout_alignStart="@+id/tvShowBirth"
+        android:textColor="#FF3030"/>
+
+    <!--CLASS-->
+    <TextView
+        android:id="@+id/tvClassDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvSexDef"
+        android:layout_alignLeft="@+id/tvSexDef"
+        android:layout_alignStart="@+id/tvSexDef"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Class"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tvClassDef"
+        android:layout_alignBottom="@+id/tvClassDef"
+        android:layout_alignLeft="@+id/tvShowSex"
+        android:layout_alignStart="@+id/tvShowSex"
+        android:textColor="#FF3030"/>
+
+    <!--COURSE-->
+    <TextView
+        android:id="@+id/tvCourseDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_course"
+        android:textSize="16sp"
+        android:layout_below="@+id/tvClassDef"
+        android:layout_alignLeft="@+id/tvClassDef"
+        android:layout_alignStart="@+id/tvClassDef"
+        android:layout_marginTop="20sp"/>
+    <TextView
+        android:id="@+id/tvShowCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Course"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/tvCourseDef"
+        android:layout_alignBottom="@+id/tvCourseDef"
+        android:layout_alignLeft="@+id/tvShowClass"
+        android:layout_alignStart="@+id/tvShowClass"
+        android:textColor="#FF3030"/>
+</RelativeLayout>

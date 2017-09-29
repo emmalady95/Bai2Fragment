@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Bai2Fragment</string>
+
+    <!--TextView-->
+    <string name="tv_name">Mời bạn nhập họ và tên</string>
+    <string name="tv_birth">Ngày sinh</string>
+    <string name="tv_class">Lớp</string>
+    <string name="tv_sex">Giới tính</string>
+    <string name="tv_course">Khóa</string>
+    <string name="tv_origin">Quê quán</string>
+    <string name="tv_showname">Họ và tên</string>
+    <string name="tv_showinfor">Thông tin vừa nhập</string>
+
+    <!--EditText-->
+    <string name="ed_hintname">Họ và tên của bạn</string>
+    <string name="ed_hintbirth">Nhập ngày tháng năm sịnh</string>
+</resources>
